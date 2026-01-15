@@ -4,7 +4,7 @@ export default function FaixaInfinita() {
   const item = (
     <div className="flex items-center gap-3 px-6">
       <span className="font-semibold text-white">
-        Bruno Wendell - Gestor de Tráfego - MPO
+        Delta Ads - Maquina de Pedidos Online
       </span>
       <FaStar className="text-white/90 text-sm" />
     </div>

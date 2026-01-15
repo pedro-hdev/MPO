@@ -11,73 +11,80 @@ export default function Home() {
       {/*banner*/}
       <section className="bg-[#020205] bg-cover bg-center">
         <div
-  className="
+          className="
     m-auto max-w-7xl flex justify-center items-end pt-10
     flex-col lg:flex-row
     gap-8 lg:gap-10
     px-4 lg:px-2
     text-center lg:text-left
   "
->
-  {/* ===== COLUNA TEXTO ===== */}
-  <div className="w-full lg:w-auto pb-10 lg:pb-16 ">
-    {/*logo*/}
-    <div className="flex items-center justify-center lg:justify-start">
-      <img
-        className="w-6 mr-3"
-        src="/delta_nexus_icon_transparent-cortado.png"
-        alt=""
-      />
-      <h1 className="text-white text-2xl sm:text-2xl lg:text-2xl">
-        <span className="font-bold">Delta </span>
-        <span className="font-light">Ads</span>
-      </h1>
-    </div>
+        >
+          {/* ===== COLUNA TEXTO ===== */}
+          <div className="w-full lg:w-auto pb-10 lg:pb-16 ">
+            {/*logo*/}
+            <div className="flex items-center justify-center lg:justify-start">
+              <img
+                className="w-6 mr-3"
+                src="/delta_nexus_icon_transparent-cortado.png"
+                alt=""
+              />
+              <h1 className="text-white text-2xl sm:text-2xl lg:text-2xl">
+                <span className="font-bold">Delta </span>
+                <span className="font-light">Ads</span>
+              </h1>
+            </div>
 
-    <p className="text-(--textcinza) text-[12px] sm:text-[13px] lg:text-[13px]">
-      Análise, Estratégia e Resultado
-    </p>
+            <p className="text-(--textcinza) text-[12px] sm:text-[13px] lg:text-[13px]">
+              Análise, Estratégia e Resultado
+            </p>
 
-    {/*hero*/}
-    <div className="pt-2">
-      <h1 className="text-white font-bold leading-tight text-3xl sm:text-4xl lg:text-4xl">
-        Tráfego para Delivery: pare de queimar dinheiro no Meta Ads e gere
-        pedidos com o <span className="text-(--primary)">MPO</span>
-      </h1>
+            {/*hero*/}
+            <div className="pt-2">
+              <h1 className="text-white font-bold leading-tight text-3xl sm:text-4xl lg:text-4xl">
+                Tráfego para Delivery: pare de queimar dinheiro no Meta Ads e
+                gere pedidos com o <span className="text-(--primary)">MPO</span>
+              </h1>
 
-      <p className="text-(--textcinza) pt-5 text-sm sm:text-base lg:text-base">
-        Um sistema direto para delivery com foco em conversão — sem promessas
-        milagrosas, com execução.{" "}
-        <span className="font-bold text-white">
-          Campanha simples, criativo que dá fome e cardápio que converte.
-        </span>{" "}
-        + plano de aplicação em{" "}
-        <span className="font-bold text-white">7 dias.</span>
-      </p>
+              <p className="text-(--textcinza) pt-5 text-sm sm:text-base lg:text-base">
+                Um sistema direto para delivery com foco em conversão — sem
+                promessas milagrosas, com execução.{" "}
+                <span className="font-bold text-white">
+                  Campanha simples, criativo que dá fome e cardápio que
+                  converte.
+                </span>{" "}
+                + plano de aplicação em{" "}
+                <span className="font-bold text-white">7 dias.</span>
+              </p>
 
-      {/* no mobile deixa a lista alinhada à esquerda pra leitura; no desktop continua igual */}
-      <ul className="list-disc text-(--textcinza) pl-4 py-5 space-y-2 text-sm sm:text-base lg:text-base text-left lg:text-left">
-        <li>Estrutura mínima de campanha completa pronta para aplicar.</li>
-        <li>Roteiros de criativos e anúncios para testar sem achismo.</li>
-        <li>Modelo de cardápio + descrições persuasivas que fecham o pedido.</li>
-      </ul>
+              {/* no mobile deixa a lista alinhada à esquerda pra leitura; no desktop continua igual */}
+              <ul className="list-disc text-(--textcinza) pl-4 py-5 space-y-2 text-sm sm:text-base lg:text-base text-left lg:text-left">
+                <li>
+                  Estrutura mínima de campanha completa pronta para aplicar.
+                </li>
+                <li>
+                  Roteiros de criativos e anúncios para testar sem achismo.
+                </li>
+                <li>
+                  Modelo de cardápio + descrições persuasivas que fecham o
+                  pedido.
+                </li>
+              </ul>
 
-      {/* no mobile centraliza o botão, no desktop mantém como estava */}
-      <div className="flex justify-center lg:justify-start">
-        <BotaoWhatsapp />
-      </div>
-    </div>
-  </div>
+              {/* no mobile centraliza o botão, no desktop mantém como estava */}
+              <div className="flex justify-center lg:justify-start">
+                <BotaoWhatsapp />
+              </div>
+            </div>
+          </div>
 
-  {/* ===== COLUNA IMAGEM ===== */}
-  {/* mobile centraliza; desktop mantém seu comportamento */}
-  <div className="w-full lg:w-auto flex justify-center lg:block items-end">
-    <img src="/brunolongometa2.png" className="w-500" alt="" />
-  </div>
-</div>
-
+          {/* ===== COLUNA IMAGEM ===== */}
+          {/* mobile centraliza; desktop mantém seu comportamento */}
+          <div className="w-full lg:w-auto flex justify-center lg:block items-end">
+            <img src="/brunolongometa2.png" className="w-500" alt="" />
+          </div>
+        </div>
       </section>
-       <FaixaInfinita/>
+      <FaixaInfinita />
       <section
         className="relative overflow-hidden bg-[#020205]
          before:content-[''] before:absolute before:inset-0 before:pointer-events-none
@@ -357,10 +364,10 @@ export default function Home() {
           {/* ===== DIFENCIAL ===== */}
           <div className="rounded-2xl p-6 bg-linear-to-b from-[#1B1F24] to-[#14181D] border border-white/10 shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_20px_60px_rgba(0,0,0,0.55)]">
             <ul className="list-decimal text-(--textcinza) pl-4 py-1 space-y-2 text-sm sm:text-base lg:text-xl">
-              <li>
+              <li className="flex justify-center items-center"><img src="/indice1.png" className="w-20"></img>
                 Menos desperdício com estrutura simples e testes controlados.
               </li>
-              <li>
+              <li className="flex justify-center items-center"><img src="/indicee2.png" className="w-20"></img>
                 Mais clareza do que funciona (você não troca tudo ao mesmo
                 tempo).
               </li>
