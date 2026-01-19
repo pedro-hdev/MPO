@@ -1,7 +1,8 @@
 import BotaoWhatsapp from "@/components/botaoWhatapp";
-import { PiSealCheckBold } from "react-icons/pi";
-import { GoChecklist } from "react-icons/go";
-import { AiOutlineRise } from "react-icons/ai";
+
+import { FaSquareXmark } from "react-icons/fa6";
+import { FaCheckSquare } from "react-icons/fa";
+
 import MapMental from "@/components/mapMental";
 import FaixaInfinita from "@/components/faixaInfinita";
 
@@ -14,59 +15,67 @@ export default function Home() {
           className="
     m-auto max-w-7xl flex justify-center items-end pt-10
     flex-col lg:flex-row
-    gap-8 lg:gap-10
+    gap-0 lg:gap-4
     px-4 lg:px-2
     text-center lg:text-left
   "
         >
           {/* ===== COLUNA TEXTO ===== */}
-          <div className="w-full lg:w-auto pb-10 lg:pb-16 ">
+          <div className="w-full lg:w-auto pb-10 lg:pb-8 ">
             {/*logo*/}
-            <div className="flex items-center justify-center lg:justify-start">
-              <img
-                className="w-6 mr-3"
-                src="/delta_nexus_icon_transparent-cortado.png"
-                alt=""
-              />
-              <h1 className="text-white text-2xl sm:text-2xl lg:text-2xl">
-                <span className="font-bold">Delta </span>
-                <span className="font-light">Ads</span>
-              </h1>
+            <div className="flex gap-2 items-center justify-center lg:justify-start">
+              <div className="flex flex-col items-end">
+                <h1 className="text-white text-xl sm:text-xl lg:text-xl tracking-wide">
+                  <span className="font-bold">Delta </span>
+                  <span className="font-light">Ads</span>
+                </h1>
+                <p className="text-(--textcinza) -mt-2 2text-[12px] sm:text-[13px] lg:text-[13px]">
+                  Tráfego Pago
+                </p>
+              </div>
+              <img className="w-8 mr-3" src="/delta-logo.png" alt="" />
             </div>
-
-            <p className="text-(--textcinza) text-[12px] sm:text-[13px] lg:text-[13px]">
-              Análise, Estratégia e Resultado
-            </p>
 
             {/*hero*/}
             <div className="pt-2">
               <h1 className="text-white font-bold leading-tight text-3xl sm:text-4xl lg:text-4xl">
-                Tráfego para Delivery: pare de queimar dinheiro no Meta Ads e
-                gere pedidos com o <span className="text-(--primary)">MPO</span>
+                Aprenda a anunciar Delivery do jeito certo e gerar pedidos com
+                previsibilidade
               </h1>
 
               <p className="text-(--textcinza) pt-5 text-sm sm:text-base lg:text-base">
-                Um sistema direto para delivery com foco em conversão — sem
-                promessas milagrosas, com execução.{" "}
+                Campanhas bem estruturadas (Meta Ads){" "}
                 <span className="font-bold text-white">
-                  Campanha simples, criativo que dá fome e cardápio que
-                  converte.
+                  {" "}
+                  + ofertas irresistíveis + cardápio web que converte
                 </span>{" "}
-                + plano de aplicação em{" "}
-                <span className="font-bold text-white">7 dias.</span>
+                para restaurantes, pizzarias, hamburguerias e gestores de
+                tráfego <span className="font-bold text-white">7 dias.</span>
+              </p>
+              <p className="text-(--textcinza) pt-5 text-sm sm:text-base lg:text-base">
+                <span className="font-bold text-white">
+                  Por apenas R$ 97,00{" "}
+                </span>{" "}
+                (acesso imediato)
               </p>
 
               {/* no mobile deixa a lista alinhada à esquerda pra leitura; no desktop continua igual */}
-              <ul className="list-disc text-(--textcinza) pl-4 py-5 space-y-2 text-sm sm:text-base lg:text-base text-left lg:text-left">
-                <li>
-                  Estrutura mínima de campanha completa pronta para aplicar.
+              <ul className="list-disc text-(--textcinza)  py-5 space-y-2 text-sm sm:text-base lg:text-base text-left lg:text-left">
+                <li className="flex items-center gap-2">
+                  <FaCheckSquare className=" text-emerald-500" /> Estrutura de
+                  campanhas pronta (passo a passo).
                 </li>
-                <li>
-                  Roteiros de criativos e anúncios para testar sem achismo.
+                <li className="flex items-center gap-2">
+                  <FaCheckSquare className=" text-emerald-500" /> Modelos de
+                  ofertas que aumentam conversão e ticket.
                 </li>
-                <li>
-                  Modelo de cardápio + descrições persuasivas que fecham o
-                  pedido.
+                <li className="flex items-center gap-2">
+                  <FaCheckSquare className=" text-emerald-500" />
+                  Cardápio web de conversão (como montar e o que escrever).
+                </li>
+                <li className="flex items-center gap-2">
+                  <FaCheckSquare className=" text-emerald-500" />
+                  Rotina de otimização para manter o custo por pedido saudável.
                 </li>
               </ul>
 
@@ -91,74 +100,68 @@ export default function Home() {
          before:bg-[radial-gradient(900px_circle_at_20%_0%,var(--primary)_0%,transparent_60%),radial-gradient(900px_circle_at_80%_100%,var(--primary)_0%,transparent_60%)]
          before:opacity-20"
       >
-        <div className="m-auto max-w-4xl flex flex-col justify-center items-center py-10 px-4 lg:px-0">
+        <div className="m-auto max-w-6xl flex flex-col justify-center items-center py-10 px-4 lg:px-0">
           {/* Título menor: */}
           <h2 className="text-white font-bold text-xl sm:text-2xl lg:text-2xl text-center">
-            <span className="text-(--primary) font-medium">Como</span>{" "}
-            Trabalhamos ?
+            Pra quem é?
           </h2>
-
-          {/* Título principal*/}
-          <h1 className="text-white font-bold pt-2 text-2xl sm:text-3xl lg:text-4xl text-center">
-            Maquina de Pedidos{" "}
-            <span className="text-(--primary) font-medium">Online</span>
-          </h1>
 
           {/* Cards: */}
           <div className="flex flex-col lg:flex-row gap-5 py-10 w-full items-center justify-center lg:items-stretch">
             {/* Card 1 */}
             <div
               className="
-          py-8 px-4 rounded flex flex-col justify-center items-center
-          w-full max-w-sm
-          lg:w-64 lg:max-w-none
-          bg-white
+          rounded-2xl p-4 bg-linear-to-b from-[#1B1F24] to-[#14181D] border border-white/10 shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_20px_60px_rgba(0,0,0,0.55)]
         "
             >
-              <PiSealCheckBold className="text-7xl sm:text-8xl text-(--primary)" />
-              <p className="text-(--pretopremi) text-xl sm:text-2xl font-bold text-center pt-5">
-                Método validado em mais de{" "}
-                <span className="text-(--primary) font-medium">
-                  40 estabelecimentos
-                </span>
+              <p className="text-white text-xl sm:text-xl font-bold  pt-5">
+                Esse curso é pra você que…
               </p>
+              <ul className="list-disc text-(--textcinza)  py-5 space-y-2 text-sm sm:text-base lg:text-base text-left lg:text-left">
+                <li className="flex items-center gap-2">
+                  <FaCheckSquare className=" text-emerald-500" /> É dono de
+                  delivery e quer mais pedidos com margem
+                </li>
+                <li className="flex items-center gap-2">
+                  <FaCheckSquare className=" text-emerald-500" />É gestor de
+                  tráfego e quer um método replicável pra restaurantes
+                </li>
+                <li className="flex items-center gap-2">
+                  <FaCheckSquare className=" text-emerald-500" />
+                  Está cansado de “impulsionar” e não saber o que está fazendo
+                </li>
+                <li className="flex items-center gap-2">
+                  <FaCheckSquare className=" text-emerald-500" />
+                  Quer parar de testar no escuro e seguir um processo simples e
+                  prático
+                </li>
+              </ul>
             </div>
 
-            {/* Card 2 (escuro com degradê) */}
+            {/* Card 2*/}
             <div
               className="
-          py-8 px-10 rounded flex flex-col justify-center items-center
-          w-full max-w-sm
-          lg:w-64 lg:max-w-none
-          bg-linear-to-b from-[#1B1F24] to-[#14181D]
-          border border-white/10
-          shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_20px_60px_rgba(0,0,0,0.55)]
+          rounded-2xl p-4 bg-linear-to-b from-[#1B1F24] to-[#14181D] border border-white/10 shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_20px_60px_rgba(0,0,0,0.55)]
         "
             >
-              <GoChecklist className="text-7xl sm:text-8xl text-(--primary)" />
-              <p className="text-white text-xl sm:text-2xl font-bold text-center pt-5">
-                Foco no{" "}
-                <span className="text-(--primary) font-medium">
-                  aumento de faturamento
-                </span>
+              <p className="text-white text-xl sm:text-xl font-bold  pt-5">
+                E não é pra você se…
               </p>
-            </div>
-
-            {/* Card 3 */}
-            <div
-              className="
-          pb-8 px-10 rounded flex flex-col justify-center items-center
-          w-full max-w-sm
-          lg:w-64 lg:max-w-none
-          bg-white
-          max-lg:pt-10
-        "
-            >
-              <AiOutlineRise className="text-7xl sm:text-8xl text-(--primary)" />
-              <p className="text-(--pretopremi) text-xl sm:text-2xl font-bold text-center pt-5 ">
-                Resultados{" "}
-                <span className="text-(--primary) font-medium">Reais</span>
-              </p>
+              <ul className="list-disc text-(--textcinza)  py-5 space-y-2 text-sm sm:text-base lg:text-base text-left lg:text-left">
+                <li className="flex items-center gap-2">
+                  <FaSquareXmark className="text-red-500" />
+                  Você quer “hack milagroso” sem executar
+                </li>
+                <li className="flex items-center gap-2">
+                   <FaSquareXmark className="text-red-500" />
+                  Você não quer mexer em oferta/cardápio e acha que “só anúncio
+                  resolve”
+                </li>
+                <li className="flex items-center gap-2">
+                  <FaSquareXmark className="text-red-500" />
+                  Você nem consegue atender pedidos hoje (operação travada)
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -364,10 +367,12 @@ export default function Home() {
           {/* ===== DIFENCIAL ===== */}
           <div className="rounded-2xl p-6 bg-linear-to-b from-[#1B1F24] to-[#14181D] border border-white/10 shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_20px_60px_rgba(0,0,0,0.55)]">
             <ul className="list-decimal text-(--textcinza) pl-4 py-1 space-y-2 text-sm sm:text-base lg:text-xl">
-              <li className="flex justify-center items-center"><img src="/indice1.png" className="w-20"></img>
+              <li className="flex justify-center items-center">
+                <img src="/indice1.png" className="w-20"></img>
                 Menos desperdício com estrutura simples e testes controlados.
               </li>
-              <li className="flex justify-center items-center"><img src="/indicee2.png" className="w-20"></img>
+              <li className="flex justify-center items-center">
+                <img src="/indicee2.png" className="w-20"></img>
                 Mais clareza do que funciona (você não troca tudo ao mesmo
                 tempo).
               </li>

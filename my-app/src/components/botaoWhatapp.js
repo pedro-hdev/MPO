@@ -19,8 +19,7 @@ export default function BotaoWhatsapp() {
                  after:content-[''] after:absolute after:-inset-2.5 after:rounded-lg
                  after:bg-sky-400/20 after:blur-2xl after:-z-10"
     >
-      ME CHAME NO WHATSAPP
-      <FaWhatsapp className="h-5 w-5" />
+      QUERO ACESSO POR R$ 97,00
     </a>
   );
 }
