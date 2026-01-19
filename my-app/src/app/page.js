@@ -29,11 +29,11 @@ export default function Home() {
                   <span className="font-bold">Delta </span>
                   <span className="font-light">Ads</span>
                 </h1>
-                <p className="text-(--textcinza) -mt-2 2text-[12px] sm:text-[13px] lg:text-[13px]">
+                <p className="text-(--textcinza) -mt-2 text-[12px] sm:text-[13px] lg:text-[13px]">
                   Tráfego Pago
                 </p>
               </div>
-              <img className="w-8 mr-3" src="/delta-logo.png" alt="" />
+              <img className="w-8" src="/delta-logo.png" alt="" />
             </div>
 
             {/*hero*/}
@@ -62,19 +62,19 @@ export default function Home() {
               {/* no mobile deixa a lista alinhada à esquerda pra leitura; no desktop continua igual */}
               <ul className="list-disc text-(--textcinza)  py-5 space-y-2 text-sm sm:text-base lg:text-base text-left lg:text-left">
                 <li className="flex items-center gap-2">
-                  <FaCheckSquare className=" text-emerald-500" /> Estrutura de
-                  campanhas pronta (passo a passo).
+                  <FaCheckSquare className=" text-emerald-500 w-3 h-4 shrink-0 " />{" "}
+                  Estrutura de campanhas pronta (passo a passo).
                 </li>
                 <li className="flex items-center gap-2">
-                  <FaCheckSquare className=" text-emerald-500" /> Modelos de
-                  ofertas que aumentam conversão e ticket.
+                  <FaCheckSquare className=" text-emerald-500 w-3 h-4 shrink-0 " />{" "}
+                  Modelos de ofertas que aumentam conversão e ticket.
                 </li>
                 <li className="flex items-center gap-2">
-                  <FaCheckSquare className=" text-emerald-500" />
+                  <FaCheckSquare className=" text-emerald-500 w-3 h-4 shrink-0 " />
                   Cardápio web de conversão (como montar e o que escrever).
                 </li>
-                <li className="flex items-center gap-2">
-                  <FaCheckSquare className=" text-emerald-500" />
+                <li className="flex items-center gap-2 ">
+                  <FaCheckSquare className=" text-emerald-500 w-3 h-4 shrink-0 " />
                   Rotina de otimização para manter o custo por pedido saudável.
                 </li>
               </ul>
@@ -107,61 +107,87 @@ export default function Home() {
           </h2>
 
           {/* Cards: */}
-          <div className="flex flex-col lg:flex-row gap-5 py-10 w-full items-center justify-center lg:items-stretch">
-            {/* Card 1 */}
-            <div
-              className="
-          rounded-2xl p-4 bg-linear-to-b from-[#1B1F24] to-[#14181D] border border-white/10 shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_20px_60px_rgba(0,0,0,0.55)]
-        "
-            >
-              <p className="text-white text-xl sm:text-xl font-bold  pt-5">
-                Esse curso é pra você que…
-              </p>
-              <ul className="list-disc text-(--textcinza)  py-5 space-y-2 text-sm sm:text-base lg:text-base text-left lg:text-left">
-                <li className="flex items-center gap-2">
-                  <FaCheckSquare className=" text-emerald-500" /> É dono de
-                  delivery e quer mais pedidos com margem
-                </li>
-                <li className="flex items-center gap-2">
-                  <FaCheckSquare className=" text-emerald-500" />É gestor de
-                  tráfego e quer um método replicável pra restaurantes
-                </li>
-                <li className="flex items-center gap-2">
-                  <FaCheckSquare className=" text-emerald-500" />
-                  Está cansado de “impulsionar” e não saber o que está fazendo
-                </li>
-                <li className="flex items-center gap-2">
-                  <FaCheckSquare className=" text-emerald-500" />
-                  Quer parar de testar no escuro e seguir um processo simples e
-                  prático
-                </li>
-              </ul>
-            </div>
+          <div className="w-full px-4 lg:px-2">
+            <div className="flex flex-col lg:flex-row gap-5 py-10 w-full items-center justify-center lg:items-stretch">
+              {/* ===== CARD 1: É PRA VOCÊ ===== */}
+              <div
+                className="
+        w-full max-w-xl lg:w-auto lg:max-w-none
+        rounded-2xl p-4
+        bg-linear-to-b from-[#1B1F24] to-[#14181D]
+        border border-white/10
+        shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_20px_60px_rgba(0,0,0,0.55)]
+      "
+              >
+                <p className="text-white text-xl sm:text-xl font-bold pt-5 text-center lg:text-left">
+                  Esse curso é pra você que…
+                </p>
 
-            {/* Card 2*/}
-            <div
-              className="
-          rounded-2xl p-4 bg-linear-to-b from-[#1B1F24] to-[#14181D] border border-white/10 shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_20px_60px_rgba(0,0,0,0.55)]
-        "
-            >
-              <p className="text-white text-xl sm:text-xl font-bold  pt-5">
-                E não é pra você se…
-              </p>
-              <ul className="list-disc text-(--textcinza)  py-5 space-y-2 text-sm sm:text-base lg:text-base text-left lg:text-left">
-                <li className="flex items-center gap-2">
-                  <FaSquareXmark className="text-red-500" />
-                  Você quer “hack milagroso” sem executar
-                </li>
-                <li className="flex items-center gap-2">
-                   <FaSquareXmark className="text-red-500" />
-                  Você não quer mexer em oferta/cardápio e acha que “só anúncio
-                  resolve”
-                </li>
-                <li className="flex items-center gap-2">
-                  <FaSquareXmark className="text-red-500" />
-                  Você nem consegue atender pedidos hoje (operação travada)
-                </li>
-              </ul>
+                <ul className="py-5 space-y-3 text-sm sm:text-base lg:text-base text-left">
+                  <li className="flex items-start gap-2 text-(--textcinza)">
+                    <FaCheckSquare className="text-emerald-500 h-4 w-4 shrink-0 mt-0.5" />
+                    <span>
+                      É dono de delivery e quer mais pedidos com margem
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2 text-(--textcinza)">
+                    <FaCheckSquare className="text-emerald-500 h-4 w-4 shrink-0 mt-0.5" />
+                    <span>
+                      É gestor de tráfego e quer um método replicável pra
+                      restaurantes
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2 text-(--textcinza)">
+                    <FaCheckSquare className="text-emerald-500 h-4 w-4 shrink-0 mt-0.5" />
+                    <span>
+                      Está cansado de “impulsionar” e não saber o que está
+                      fazendo
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2 text-(--textcinza)">
+                    <FaCheckSquare className="text-emerald-500 h-4 w-4 shrink-0 mt-0.5" />
+                    <span>
+                      Quer parar de testar no escuro e seguir um processo
+                      simples e prático
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* ===== CARD 2: NÃO É PRA VOCÊ ===== */}
+              <div
+                className="
+        w-full max-w-xl lg:w-auto lg:max-w-none
+        rounded-2xl p-4
+        bg-linear-to-b from-[#1B1F24] to-[#14181D]
+        border border-white/10
+        shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_20px_60px_rgba(0,0,0,0.55)]
+      "
+              >
+                <p className="text-white text-xl sm:text-xl font-bold pt-5 text-center lg:text-left">
+                  E não é pra você se…
+                </p>
+
+                <ul className="py-5 space-y-3 text-sm sm:text-base lg:text-base text-left">
+                  <li className="flex items-start gap-2 text-(--textcinza)">
+                    <FaSquareXmark className="text-red-500 h-4 w-4 shrink-0 mt-0.5" />
+                    <span>Você quer “hack milagroso” sem executar</span>
+                  </li>
+                  <li className="flex items-start gap-2 text-(--textcinza)">
+                    <FaSquareXmark className="text-red-500 h-4 w-4 shrink-0 mt-0.5" />
+                    <span>
+                      Você não quer mexer em oferta/cardápio e acha que “só
+                      anúncio resolve”
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2 text-(--textcinza)">
+                    <FaSquareXmark className="text-red-500 h-4 w-4 shrink-0 mt-0.5" />
+                    <span>
+                      Você nem consegue atender pedidos hoje (operação travada)
+                    </span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
