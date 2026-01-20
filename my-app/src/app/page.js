@@ -5,8 +5,36 @@ import { FaCheckSquare } from "react-icons/fa";
 
 import MapMental from "@/components/mapMental";
 import FaixaInfinita from "@/components/faixaInfinita";
+import FaqSection from "@/components/faqSection";
 
 export default function Home() {
+  const faqItems = [
+    {
+      q: "Isso serve para qualquer tipo de delivery/restaurante?",
+      a: "Serve para a maioria dos deliveries. O método foca em oferta, criativo e estrutura de campanha — adaptamos para o seu tipo de operação.",
+    },
+    {
+      q: "Preciso ter muita verba para começar?",
+      a: "Não. Você consegue começar com uma verba menor, desde que siga a rotina de teste e ajuste.",
+    },
+    {
+      q: "Sou iniciante em tráfego. Consigo aplicar?",
+      a: "Sim. O curso é passo a passo e pensado para execução, com templates e checklists.",
+    },
+    {
+      q: "O curso ensina a fazer criativos mesmo sem equipe?",
+      a: "Sim. Você vai ter modelos e roteiros, e pode usar IA para acelerar imagem/vídeo.",
+    },
+    {
+      q: "Meu problema é o cardápio. Isso realmente faz diferença?",
+      a: "Faz muita. Cardápio é conversão. Ajustes simples podem aumentar ticket e taxa de pedido.",
+    },
+    {
+      q: "Dá para aplicar em clientes e vender como serviço?",
+      a: "Sim. Você pode aplicar como método replicável em restaurantes e vender como gestão/serviço.",
+    },
+  ];
+
   return (
     <div>
       {/*banner*/}
@@ -107,87 +135,83 @@ export default function Home() {
           </h2>
 
           {/* Cards: */}
-          <div className="w-full px-4 lg:px-2">
-            <div className="flex flex-col lg:flex-row gap-5 py-10 w-full items-center justify-center lg:items-stretch">
-              {/* ===== CARD 1: É PRA VOCÊ ===== */}
-              <div
-                className="
+
+          <div className="flex flex-col lg:flex-row gap-5 py-10 w-full items-center justify-center lg:items-stretch">
+            {/* ===== CARD 1: É PRA VOCÊ ===== */}
+            <div
+              className="
         w-full max-w-xl lg:w-auto lg:max-w-none
         rounded-2xl p-4
         bg-linear-to-b from-[#1B1F24] to-[#14181D]
         border border-white/10
         shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_20px_60px_rgba(0,0,0,0.55)]
       "
-              >
-                <p className="text-white text-xl sm:text-xl font-bold pt-5 text-center lg:text-left">
-                  Esse curso é pra você que…
-                </p>
+            >
+              <p className="text-white text-xl sm:text-xl font-bold pt-5 text-center lg:text-left">
+                Esse curso é pra você que…
+              </p>
 
-                <ul className="py-5 space-y-3 text-sm sm:text-base lg:text-base text-left">
-                  <li className="flex items-start gap-2 text-(--textcinza)">
-                    <FaCheckSquare className="text-emerald-500 h-4 w-4 shrink-0 mt-0.5" />
-                    <span>
-                      É dono de delivery e quer mais pedidos com margem
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2 text-(--textcinza)">
-                    <FaCheckSquare className="text-emerald-500 h-4 w-4 shrink-0 mt-0.5" />
-                    <span>
-                      É gestor de tráfego e quer um método replicável pra
-                      restaurantes
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2 text-(--textcinza)">
-                    <FaCheckSquare className="text-emerald-500 h-4 w-4 shrink-0 mt-0.5" />
-                    <span>
-                      Está cansado de “impulsionar” e não saber o que está
-                      fazendo
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2 text-(--textcinza)">
-                    <FaCheckSquare className="text-emerald-500 h-4 w-4 shrink-0 mt-0.5" />
-                    <span>
-                      Quer parar de testar no escuro e seguir um processo
-                      simples e prático
-                    </span>
-                  </li>
-                </ul>
-              </div>
+              <ul className="py-5 space-y-3 text-sm sm:text-base lg:text-base text-left">
+                <li className="flex items-start gap-2 text-(--textcinza)">
+                  <FaCheckSquare className="text-emerald-500 h-4 w-4 shrink-0 mt-0.5" />
+                  <span>É dono de delivery e quer mais pedidos com margem</span>
+                </li>
+                <li className="flex items-start gap-2 text-(--textcinza)">
+                  <FaCheckSquare className="text-emerald-500 h-4 w-4 shrink-0 mt-0.5" />
+                  <span>
+                    É gestor de tráfego e quer um método replicável pra
+                    restaurantes
+                  </span>
+                </li>
+                <li className="flex items-start gap-2 text-(--textcinza)">
+                  <FaCheckSquare className="text-emerald-500 h-4 w-4 shrink-0 mt-0.5" />
+                  <span>
+                    Está cansado de “impulsionar” e não saber o que está fazendo
+                  </span>
+                </li>
+                <li className="flex items-start gap-2 text-(--textcinza)">
+                  <FaCheckSquare className="text-emerald-500 h-4 w-4 shrink-0 mt-0.5" />
+                  <span>
+                    Quer parar de testar no escuro e seguir um processo simples
+                    e prático
+                  </span>
+                </li>
+              </ul>
+            </div>
 
-              {/* ===== CARD 2: NÃO É PRA VOCÊ ===== */}
-              <div
-                className="
+            {/* ===== CARD 2: NÃO É PRA VOCÊ ===== */}
+            <div
+              className="
         w-full max-w-xl lg:w-auto lg:max-w-none
         rounded-2xl p-4
         bg-linear-to-b from-[#1B1F24] to-[#14181D]
         border border-white/10
         shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_20px_60px_rgba(0,0,0,0.55)]
       "
-              >
-                <p className="text-white text-xl sm:text-xl font-bold pt-5 text-center lg:text-left">
-                  E não é pra você se…
-                </p>
+            >
+              <p className="text-white text-xl sm:text-xl font-bold pt-5 text-center lg:text-left">
+                E não é pra você se…
+              </p>
 
-                <ul className="py-5 space-y-3 text-sm sm:text-base lg:text-base text-left">
-                  <li className="flex items-start gap-2 text-(--textcinza)">
-                    <FaSquareXmark className="text-red-500 h-4 w-4 shrink-0 mt-0.5" />
-                    <span>Você quer “hack milagroso” sem executar</span>
-                  </li>
-                  <li className="flex items-start gap-2 text-(--textcinza)">
-                    <FaSquareXmark className="text-red-500 h-4 w-4 shrink-0 mt-0.5" />
-                    <span>
-                      Você não quer mexer em oferta/cardápio e acha que “só
-                      anúncio resolve”
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2 text-(--textcinza)">
-                    <FaSquareXmark className="text-red-500 h-4 w-4 shrink-0 mt-0.5" />
-                    <span>
-                      Você nem consegue atender pedidos hoje (operação travada)
-                    </span>
-                  </li>
-                </ul>
-              </div>
+              <ul className="py-5 space-y-3 text-sm sm:text-base lg:text-base text-left">
+                <li className="flex items-start gap-2 text-(--textcinza)">
+                  <FaSquareXmark className="text-red-500 h-4 w-4 shrink-0 mt-0.5" />
+                  <span>Você quer “hack milagroso” sem executar</span>
+                </li>
+                <li className="flex items-start gap-2 text-(--textcinza)">
+                  <FaSquareXmark className="text-red-500 h-4 w-4 shrink-0 mt-0.5" />
+                  <span>
+                    Você não quer mexer em oferta/cardápio e acha que “só
+                    anúncio resolve”
+                  </span>
+                </li>
+                <li className="flex items-start gap-2 text-(--textcinza)">
+                  <FaSquareXmark className="text-red-500 h-4 w-4 shrink-0 mt-0.5" />
+                  <span>
+                    Você nem consegue atender pedidos hoje (operação travada)
+                  </span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -199,7 +223,7 @@ export default function Home() {
           <MapMental />
         </div>
       </section>
-
+      <hr className="text-gray-600" />
       <section
         className="relative overflow-hidden bg-[#020205]
          before:content-[''] before:absolute before:inset-0 before:pointer-events-none
@@ -371,7 +395,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <hr className="text-gray-600" />
       <section
         className="relative overflow-hidden bg-[#020205]
          before:content-[''] before:absolute before:inset-0 before:pointer-events-none
@@ -389,39 +413,111 @@ export default function Home() {
           O que muda quando você para de “rodar anúncio” e passa a rodar um
           sistema.
         </p>
-        <div className="m-auto max-w-6xl flex pt-10 justify-center items-center">
-          {/* ===== DIFENCIAL ===== */}
-          <div className="rounded-2xl p-6 bg-linear-to-b from-[#1B1F24] to-[#14181D] border border-white/10 shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_20px_60px_rgba(0,0,0,0.55)]">
-            <ul className="list-decimal text-(--textcinza) pl-4 py-1 space-y-2 text-sm sm:text-base lg:text-xl">
-              <li className="flex justify-center items-center">
-                <img src="/indice1.png" className="w-20"></img>
-                Menos desperdício com estrutura simples e testes controlados.
-              </li>
-              <li className="flex justify-center items-center">
-                <img src="/indicee2.png" className="w-20"></img>
-                Mais clareza do que funciona (você não troca tudo ao mesmo
-                tempo).
-              </li>
-              <li>
-                Criativos replicáveis com roteiro — menos dependência de
-                “inspiração”.
-              </li>
-              <li>Cardápio vira “fechador” de pedido, não um gargalo.</li>
-              <li>Rotina de otimização orientada a pedido, não a curtida.</li>
-              <li>
-                Para prestadores: método + entregáveis para posicionar serviço
-                com clareza.
-              </li>
-            </ul>
+        <div
+          className="
+    m-auto max-w-6xl pt-10
+    flex flex-col lg:flex-row
+    justify-center items-center
+    gap-8 lg:gap-0
+    px-4 lg:px-0
+  "
+        >
+          {/* ===== BLOCO ESQUERDO: DIFERENCIAL (CARD) ===== */}
+          <div className="w-full lg:w-auto pb-8">
+            <div className="rounded-2xl p-6 bg-linear-to-b from-[#1B1F24] to-[#14181D] border border-white/10 shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_20px_60px_rgba(0,0,0,0.55)]">
+              <ul className="list-none text-(--textcinza) py-1 space-y-4 text-sm sm:text-base lg:text-xl">
+                <li className="flex items-center gap-3">
+                  <img
+                    src="/1indice.webp"
+                    className="w-12 sm:w-14 shrink-0"
+                    alt=""
+                  />
+                  <span>
+                    Menos desperdício com estrutura simples e testes
+                    controlados.
+                  </span>
+                </li>
+
+                <li className="flex items-center gap-3">
+                  <img
+                    src="/2indice.webp"
+                    className="w-12 sm:w-14 shrink-0"
+                    alt=""
+                  />
+                  <span>
+                    Mais clareza do que funciona (você não troca tudo ao mesmo
+                    tempo).
+                  </span>
+                </li>
+
+                <li className="flex items-center gap-3">
+                  <img
+                    src="/3indice.webp"
+                    className="w-12 sm:w-14 shrink-0"
+                    alt=""
+                  />
+                  <span>
+                    Criativos replicáveis com roteiro — menos dependência de
+                    “inspiração”.
+                  </span>
+                </li>
+
+                <li className="flex items-center gap-3">
+                  <img
+                    src="/4indice.webp"
+                    className="w-12 sm:w-14 shrink-0"
+                    alt=""
+                  />
+                  <span>
+                    Cardápio vira “fechador” de pedido, não um gargalo.
+                  </span>
+                </li>
+
+                <li className="flex items-center gap-3">
+                  <img
+                    src="/5indice.webp"
+                    className="w-12 sm:w-14 shrink-0"
+                    alt=""
+                  />
+                  <span>
+                    Rotina de otimização orientada a pedido, não a curtida.
+                  </span>
+                </li>
+
+                <li className="flex items-center gap-3">
+                  <img
+                    src="/6indice.webp"
+                    className="w-12 sm:w-14 shrink-0"
+                    alt=""
+                  />
+                  <span>
+                    Para prestadores: método + entregáveis para posicionar
+                    serviço com clareza.
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div className="w-full lg:w-auto flex justify-center lg:justify-start">
+          {/* ===== BLOCO DIREITO: IMAGEM ===== */}
+          <div className="w-full lg:w-auto flex justify-center lg:justify-start items-end">
             <img
               src="/pedroLuva2.png"
               alt=""
-              className="w-70 sm:w-90 md:w-105 lg:w-3xl max-w-full"
+              className="w-65 sm:w-85 md:w-105 lg:w-3xl max-w-full "
             />
           </div>
+        </div>
+      </section>
+      <hr className="text-gray-600" />
+      <section
+        className="relative overflow-hidden bg-[#020205]
+         before:content-[''] before:absolute before:inset-0 before:pointer-events-none
+         before:bg-[radial-gradient(900px_circle_at_20%_0%,var(--primary)_0%,transparent_60%),radial-gradient(900px_circle_at_80%_100%,var(--primary)_0%,transparent_60%)]
+         before:opacity-20"
+      >
+        <div>
+          <FaqSection items={faqItems} />
         </div>
       </section>
     </div>

@@ -23,7 +23,7 @@ export default function FaixaInfinita() {
       <div className="flex whitespace-nowrap">
         <div
           className="flex"
-          style={{ animation: "marquee 36s linear infinite" }}
+          style={{ animation: "marquee 50s linear infinite" }}
         >
           {Array.from({ length: 12 }).map((_, i) => (
             <div key={`a-${i}`}>{item}</div>

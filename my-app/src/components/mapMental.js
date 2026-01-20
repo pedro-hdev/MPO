@@ -36,10 +36,12 @@ export default function MapMental() {
           {/* Caixa central */}
           <div className="absolute left-1/2 top-1/2 w-105 -translate-x-1/2 -translate-y-1/2">
             <Card>
-              <h2 className="text-center text-3xl font-extrabold leading-tight">
-                Gestão Estratégica <br />
-                de <span className="text-(--primary)">Ifood</span>
+              <h2 className="text-center text-3xl font-semibold leading-tight ">
+               Máquina de Pedidos Online <br/>
+               
               </h2>
+                <p className="text-(--primary) text-center text-sm italic font-semibold leading-tight">Campanhas + Oferta + Cardápio Web</p>
+            
             </Card>
           </div>
 
@@ -47,10 +49,9 @@ export default function MapMental() {
           <div className="absolute left-1/2 top-4.5 w-95 -translate-x-1/2">
             <Card small>
               <p className="text-center text-base font-semibold">
-                Suporte técnico especializado <br />
-                para{" "}
-                <span className="text-(--primary)">
-                  cancelamento e problemas
+                Funil do clique ao pedido <br />
+                <span className="text-(--primary) text-sm italic">
+                  Sem depender de “impulsionar”
                 </span>
               </p>
             </Card>
@@ -60,9 +61,8 @@ export default function MapMental() {
           <div className="absolute left-1/2 bottom-4.5 w-110 -translate-x-1/2">
             <Card small>
               <p className="text-center text-base font-semibold">
-                Acompanhamento e ações <br />
-                na aba de{" "}
-                <span className="text-(--primary)">feed e marketing</span>
+               Cardápio Web de Conversão <br />
+                <span className="text-(--primary) text-sm italic">Estrutura, descrição e organização que vende</span>
               </p>
             </Card>
           </div>
@@ -71,9 +71,8 @@ export default function MapMental() {
           <div className="absolute left-5 top-20.5 w-75">
             <Card small>
               <p className="text-center text-base font-semibold">
-                Análise de lojas <br />
-                por{" "}
-                <span className="text-(--primary)">posicionamento</span>
+              Estrutura de campanhas<br />
+                <span className="text-(--primary) text-sm italic">Do jeito certo para delivery</span>
               </p>
             </Card>
           </div>
@@ -82,8 +81,8 @@ export default function MapMental() {
           <div className="absolute left-5 bottom-20.5 w-65">
             <Card small>
               <p className="text-center text-base font-semibold">
-                Ajuste de{" "}
-                <span className="text-(--primary)">cardápio</span>
+              Oferta irresistível<br/>
+                <span className="text-(--primary) text-sm italic">Combos, urgência e ticket médio</span>
               </p>
             </Card>
           </div>
@@ -92,8 +91,8 @@ export default function MapMental() {
           <div className="absolute right-5 top-20.5 w-65">
             <Card small>
               <p className="text-center text-base font-semibold">
-                Ajuste de <br />
-                <span className="text-(--primary)">posicionamento</span>
+               Criativos que dão fome<br />
+                <span className="text-(--primary) text-sm italic">Ganchos e roteiros prontos</span>
               </p>
             </Card>
           </div>
@@ -102,8 +101,9 @@ export default function MapMental() {
           <div className="absolute right-5 bottom-20.5 w-[320px]">
             <Card small>
               <p className="text-center text-base font-semibold">
-                Relatório dos índices <br />
-                de <span className="text-(--primary)">desempenho</span>
+                Otimização e escala <br />
+                 <span className="text-(--primary) text-sm italic">
+                  Rotina simples para baixar custo/pedido</span>
               </p>
             </Card>
           </div>
